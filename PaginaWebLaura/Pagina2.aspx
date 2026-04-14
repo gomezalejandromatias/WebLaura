@@ -61,6 +61,12 @@
             <asp:Button ID="btnEnviarMensaje" Text="Enviar Mensaje" runat="server" OnClick="btnEnviarMensaje_Click" />
 
         </div>
+        <!---aca pongo el label de msjs de exito-->
+
+        <asp:Label ID="lblEmail" Text="Email recibido y Mandado con exito" runat="server" />
+        <div>
+
+        </div>
 
     </div>
 

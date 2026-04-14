@@ -11,18 +11,36 @@ namespace PaginaWebLaura
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           if(!IsPostBack)
+            {
 
+            lblEmail.Visible = false;
+
+
+            }
         }
 
         protected void btnEnviarMensaje_Click(object sender, EventArgs e)
         {
             EmailService emailService = new EmailService();
+            EmailService recibiremailusuario = new EmailService();
 
-                emailService.armarcorreo(txtEmail.Text);
+
+
             try
             {
-
+                // mail al usuario
+                emailService.armarcorreo(txtEmail.Text);
                 emailService.enviaremail();
+
+                // mail que te llega a vos
+                recibiremailusuario.RecibirEmailUsuario(
+                    txtMultiline.Text,
+                    txtEmail.Text,
+                    txtNombreApellido.Text,
+                    txtCelular.Text
+                );
+                recibiremailusuario.RecibirEmail();
 
             }
             catch (Exception ex)
@@ -31,7 +49,23 @@ namespace PaginaWebLaura
                 throw ex;
             }
 
+            lblEmail.Visible = true;
 
+            Borrar();
+
+
+
+        }
+
+        public void Borrar()
+        {
+
+
+            txtMultiline.Text = "";
+            txtNombreApellido.Text = "";
+            txtCelular.Text = "";
+            txtEmail.Text = "";
+            lblEmail.Visible = false;
 
         }
     }

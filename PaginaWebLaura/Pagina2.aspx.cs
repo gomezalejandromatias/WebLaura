@@ -14,8 +14,8 @@ namespace PaginaWebLaura
            if(!IsPostBack)
             {
 
-            lblEmail.Visible = false;
-
+                lblEmail.Visible = false;
+                Borrar();
 
             }
         }
@@ -51,7 +51,7 @@ namespace PaginaWebLaura
 
             lblEmail.Visible = true;
 
-            Borrar();
+            
 
 
 

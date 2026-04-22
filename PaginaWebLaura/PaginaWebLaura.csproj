@@ -122,6 +122,10 @@
     <Content Include="favicon.ico" />
     <Content Include="Fotos\familia.jpg" />
     <Content Include="Fotos\fondo 3.jpg" />
+    <Content Include="Fotos\Lengua\MaestraHumana.jpg" />
+    <Content Include="Fotos\Lengua\MaestraLeyendo.jpg" />
+    <Content Include="Fotos\Matematicas\MaestraEnsenando.jpg" />
+    <Content Include="Fotos\Matematicas\NeneSumando.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Pagina1.aspx" />
     <Content Include="Pagina2.aspx" />
@@ -182,6 +186,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Videos\Lengua.mp4" />
+    <Content Include="Videos\VideoMtematico.mp4" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />

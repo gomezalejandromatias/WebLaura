@@ -40,96 +40,225 @@
         </div>
 
     </div>
+    <!----div padre que hace que cada uno se vea al lado del otro e flex lo hace posible-->
+    <div style="display: flex; justify-content: center; gap: 20px;">
 
-    <!---imagenes sobre matematicas con caruseleExample margin:100px lo baja si dejo auto al lado d emargin lo centra -->
-    <div id="carouselExample" class=" carousel slide" data-bs-ride="carousel" style="width: 40%; margin: 100px;">
-        <p> Ciencias Matematicas </p>
 
-        <!---aca van la imagenes-->
-        <div class=" carousel-inner">
-            <!---carousel para div de la foto-->
-            <div class="carousel-item active">
 
-                <img src="Fotos/Matematicas/NeneSumando.jpg" class=" d-block w-100" />
 
+
+        <!---imagenes sobre matematicas con caruseleExample margin:100px lo baja si dejo auto al lado d emargin lo centra -->
+        <div id="carouselExample" class=" carousel slide" data-bs-ride="carousel" style="width: 40%; margin: 20px;">
+            <p>Ciencias Matematicas </p>
+
+            <!---aca van la imagenes-->
+            <div class=" carousel-inner">
+                <!---carousel para div de la foto-->
+                <div class="carousel-item active">
+
+                    <img src="Fotos/Matematicas/NeneSumando.jpg" class=" d-block w-100" />
+
+                </div>
+
+                <!--div para cada carousel de cada foto-->
+                <div class=" carousel-item">
+
+                    <img src="Fotos/Matematicas/MaestraEnsenando.jpg" class="d-block w-100" />
+
+                </div>
+                <!--videos-->
+                <div class="carousel-item">
+
+                    <video class=" d-block w-100" controls>
+                        <source src="Videos/VideoMtematico.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
+
+                <!--aca termina el div carousel -inner-->
             </div>
 
-            <!--div para cada carousel de cada foto-->
-            <div class=" carousel-item">
+            <<!--botones para pasar la foto html prev-->
+            <button class="carousel carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class=" carousel-control-prev-icon"></span>
+            </button>
 
-                <img src="Fotos/Matematicas/MaestraEnsenando.jpg" class="d-block w-100" />
+            <!--boton para pàsar la foto html con next-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
 
-            </div>
-            <!--videos-->
-            <div class="carousel-item">
-              
-                <video class=" d-block w-100" controls>
-                    <source src="Videos/VideoMtematico.mp4" type="video/mp4" />
-                </video>
-            </div>
+                <span class="carousel-control-next-icon"></span>
+            </button>
 
-
-            <!--aca termina el div carousel -inner-->
+            <!--aca termina el carouselExample-->
         </div>
 
-        <<!--botones para pasar la foto html prev-->
-        <button class="carousel carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class=" carousel-control-prev-icon"></span>
-        </button>
+        <!--carousel para lengua-->
+        <div id="carouselExampleLengua" class=" carousel slide" data-bs-ride="carousel" style="width: 40%; margin: 20px;">
+            <p>Lengua y Literatura </p>
 
-        <!--boton para pàsar la foto html con next-->
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <!--aca es carousel inner el que pone las fotos-->
+            <div class=" carousel-inner">
+                <!--div de la imagen item active-->
+                <div class="carousel-item active">
 
-            <span class="carousel-control-next-icon"></span>
-        </button>
+                    <img src="Fotos/Lengua/MaestraHumana.jpg" class=" d-block w-100" />
 
-        <!--aca termina el carouselExample-->
+                </div>
+                <!--segunda foto sin active-->
+                <div class="carousel-item">
+                    <img src="Fotos/Lengua/MaestraLeyendo.jpg" class=" d-block w-100" />
+
+                </div>
+                <!--videos de lengua-->
+                <div class="carousel-item">
+
+                    <video class=" d-block w-100" controls>
+                        <source src="Videos/Lengua.mp4" type="video/mp4" />
+
+                    </video>
+
+                </div>
+                <!--aca termina el carousel inner-->
+            </div>
+
+            <!--boton para adelante-->
+            <button class="carousel carousel-control-prev" type="button" data-bs-target="#carouselExampleLengua" data-bs-slide="prev">
+                <span class=" carousel-control-prev-icon"></span>
+            </button>
+            <!--botton para atras-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLengua" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+
+
+
+            <!--aca termina el carousel-->
+
+        </div>
+
+        <!--aca termina el div padre-->
     </div>
 
-    <!--carousel para lenga-->
-    <div id="carouselExampleLengua" class=" carousel slide" data-bs-ride="carousel" style="width: 40%; margin: 100px;">   
-        <p> Lengua y Literatura </p>
 
-     <!--aca es carousel inner el que pone las fotos-->
-        <div class=" carousel-inner">   
-            <!--div de la imagen item active-->
-            <div class="carousel-item active">
 
-                <img src="Fotos/Lengua/MaestraHumana.jpg" class=" d-block w-100"  />
+    <!--aca comienza el div padre de las fotos que le siguen historia y naturales con flex hace que se piongan uno al lado del otro-->
 
+    <div style="display: flex; justify-content: center; gap: 20px;">
+
+        <!--dvi carousel historia-->
+        <div id="carouselHistoria" class=" carousel slide" data-bs-ride="carousel" style="width: 40%; margin: 20px;">
+
+
+            <p>Historia </p>
+
+
+            <!--aca van los div de los inner que hace que la foto quede-->
+            <div class=" carousel-inner">
+                <!--aca van las fotos -->
+
+
+                <!--aca va la foto-->
+                <div class=" carousel-item active">
+                    <img src="Fotos/Historia/maestrahistoria1.jpg" class=" d-block w-100" />
+                </div>
+                <!--aca vala foto-->
+                <div class="carousel-item">
+                    <img src="Fotos/Historia/maestrahistroa.jpg" class=" d-block w-100" />
+                </div>
+                <!--aca va el video-->
+                <div class=" carousel-item">
+                    <video class=" d-block w-100" controls>
+                        <source src="Videos/videohistoria.mp4" type="video/mp4" />
+                    </video>
+
+                </div>
+
+
+
+
+
+
+                <!---aca termina el inner-->
             </div>
-            <!--segunda foto sin active-->
-            <div class="carousel-item">   
-                <img src="Fotos/Lengua/MaestraLeyendo.jpg" class=" d-block w-100" />
 
-            </div>
-            <!--videos de lengua-->
-            <div class="carousel-item"> 
-                
-                <video class=" d-block w-100" controls>
-                    <source src="Videos/Lengua.mp4" type="video/mp4" />
-                
-                </video>
 
-            </div>
-            <!--aca termina el carousel inner-->
+
+            <!--boton para adelante-->
+            <button class="carousel carousel-control-prev" type="button" data-bs-target="#carouselHistoria" data-bs-slide="prev">
+                <span class=" carousel-control-prev-icon"></span>
+            </button>
+            <!--botton para atras-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHistoria" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+
+
+            <!--aca termina el div carousel historia -->
         </div>
 
-        <!--boton para adelante-->
-        <button class="carousel carousel-control-prev" type="button" data-bs-target="#carouselExampleLengua" data-bs-slide="prev" >
-            <span class=" carousel-control-prev-icon">  </span>
-        </button>
-        <!--botton para atras-->
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLengua" data-bs-slide="next">
-
-            <span class="carousel-control-next-icon">  </span>
-        </button>
-
-        
 
 
-  <!--aca termina el carousel-->
+        <!--aca comienza el carousel de naturales-->
+        <div id="carouselNaturales" class=" carousel slide" data-bs-ride="carousel" style="width: 40%; margin: 20px;">
 
+
+            <p>Historia </p>
+
+
+            <!--aca van los div de los inner que hace que la foto quede-->
+            <div class=" carousel-inner">
+                <!--aca van las fotos -->
+
+
+                <!--aca va la foto-->
+                <div class=" carousel-item active">
+                    <img src="Fotos/Naturales/Naturales1.jpg" class=" d-block w-100" />
+                </div>
+                <!--aca vala foto-->
+                <div class="carousel-item">
+                    <img src="Fotos/Naturales/Naturales.jpg" class=" d-block w-100" />
+                </div>
+                <!--aca va el video-->
+                <div class=" carousel-item">
+                    <video class=" d-block w-100" controls>
+                        <source src="Videos/videohistoria.mp4" type="video/mp4" />
+                    </video>
+
+                </div>
+
+
+
+
+
+
+                <!---aca termina el inner-->
+            </div>
+
+
+
+            <!--boton para adelante-->
+            <button class="carousel carousel-control-prev" type="button" data-bs-target="#carouselNaturales" data-bs-slide="prev">
+                <span class=" carousel-control-prev-icon"></span>
+            </button>
+            <!--botton para atras-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNaturales" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+
+
+            <!--aca termina el div carousel naturales -->
+        </div>
+
+
+
+
+        <!--aca ermina el div padre del flex-->
     </div>
 
 
